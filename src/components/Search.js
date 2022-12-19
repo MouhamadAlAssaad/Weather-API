@@ -23,7 +23,7 @@ class Search extends React.Component {
             this.props.handleInput(this.state.input);
           }}
         >
-          Say Hello
+          Find Weather  
         </button>
       </div>
     );
