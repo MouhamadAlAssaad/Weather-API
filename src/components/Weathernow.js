@@ -1,6 +1,8 @@
 import React from "react";
 import "../App.css";
 import mostlycloudy from "../img/weather-icons/mostlycloudy.svg";
+import Fakeweather from "../data/Fakeweather.json";
+
 
 class Weathernow extends React.Component {
 
@@ -10,13 +12,13 @@ class Weathernow extends React.Component {
 
             <figure>
               <img src={mostlycloudy} alt="overcast clouds"></img> 
-            <figcaption>Overcast clouds</figcaption>
+            <figcaption>{this.props. WeathernowDescr}</figcaption>
             </figure>
             <div className="abouttemperature">
-              <span><b>Temperature</b></span>10&deg; to 11&deg;C
+              <span><b>Temperature</b></span>{this.props.tempmin}&deg;C to {this.props.tempmax}&deg;C
             <div>
             <p>
-              <span><b>Humidity</b></span> 78% <span><b>Pressure</b></span> 1008.48
+              <span><b>Humidity</b></span> {this.props.humidity}% <span><b>Pressure</b></span> {this.props.pressure}
             </p>
             </div>
             </div>
