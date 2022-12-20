@@ -44,11 +44,11 @@ class App extends Component {
       <Search />
 
       <Weathernow 
-        WeathernowDescr={this.state.Fakeweather.list[4].weather[0].description}
-        tempmin={(this.state.Fakeweather.list[4].main.temp_min -273.15).toFixed()}
-        tempmax={(this.state.Fakeweather.list[4].main.temp_max -273.15).toFixed()}
-        humidity={this.state.Fakeweather.list[4].main.humidity}
-        pressure={this.state.Fakeweather.list[4].main.pressure}
+        WeathernowDescr={this.state.Fakeweather.list[2].weather[0].description}
+        tempmin={(this.state.Fakeweather.list[2].main.temp_min -273.15).toFixed()}
+        tempmax={(this.state.Fakeweather.list[2].main.temp_max -273.15).toFixed()}
+        humidity={this.state.Fakeweather.list[2].main.humidity}
+        pressure={this.state.Fakeweather.list[2].main.pressure}
 
       
       
